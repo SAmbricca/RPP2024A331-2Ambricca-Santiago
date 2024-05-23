@@ -1,0 +1,151 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Text;
+using System.Threading.Tasks;
+using static Entidades.Comercio;
+
+namespace Entidades
+{
+    public abstract class Comercio
+    {
+        protected int _cantidadDeEmpleados;
+        protected Comerciante _comerciante;
+        protected static Random _generadorDeEmpleados;
+        protected string _nombre;
+        protected float _precioAlquiler;
+
+        public Comercio(string nombre, float precioAlquiler, Comerciante comerciante) ///Inicializa las propiedades
+        {
+            _nombre = nombre;
+            _comerciante = comerciante;
+            _precioAlquiler = precioAlquiler;
+        }
+
+        public Comercio(string nombre, float precioAlquiler, Comerciante comerciante, int cantidadDeEmpleados)
+        {
+            _nombre = nombre;
+            _comerciante = comerciante;
+            _precioAlquiler = precioAlquiler;
+            _cantidadDeEmpleados = cantidadDeEmpleados;
+        }
+        static Comercio()
+        {
+            _generadorDeEmpleados = new Random();
+        }
+
+        public Comercio()  ///Constructor de instancia vacio
+        {
+
+        }
+
+        public string Nombre
+        {
+            get { return _nombre; }
+            set { _nombre = value; }
+        }
+        public float PrecioAlquiler
+        {
+            get { return _precioAlquiler; }
+            set { _precioAlquiler = value; }
+        }
+
+        public int CantidadDeEmpleados   ///propiedad 
+        {
+            get 
+            { 
+                return _cantidadDeEmpleados; 
+            }
+            set
+            {
+                if (value == 0)  ///Solo entra si la cantidad de empleados (value) = 0
+                {
+                    _cantidadDeEmpleados = _generadorDeEmpleados.Next(1, 101); ///.Next devuelve un valor entre los valores asignados. El 101 esta excluido
+                }
+                else 
+                {
+                    _cantidadDeEmpleados = value;   
+                }
+            }
+        }
+
+        public static bool operator == (Comercio c1, Comercio c2)
+        {
+            return c1._nombre == c2._nombre && c1._comerciante == c2._comerciante;
+        }
+
+        public static bool operator != (Comercio c1, Comercio c2) 
+        {
+            return !(c1 == c2);
+        }
+
+        private static string Mostrar(Comercio comercio)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            stringBuilder.AppendLine($"Nombre: {comercio._nombre}");
+            stringBuilder.AppendLine($"Comerciante: {comercio._comerciante}");
+            stringBuilder.AppendLine($"Cantidad de empleados: {comercio._cantidadDeEmpleados}");
+
+            return stringBuilder.ToString();
+        }
+
+        public static explicit operator string (Comercio comercio)
+        {
+            return Mostrar(comercio);
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is Comercio comercio && comercio == this;  /// se fija si el obj que le mando es de tipo Comercio y, si lo es, lo almacena en la variable comercio. Luego comparo el obj = comercio con "this" que es la clase que estoy viendo
+        }
+
+        public class Comerciante : Comercio
+        {
+            private string _apellido;
+            private string _nombre;
+
+            public Comerciante()  ///constructor de instancia vacio
+            {
+
+            }
+
+            public Comerciante(string apellido, string nombre) ///constructor de instancia que inicializa los atributos
+            {
+                _apellido = apellido;
+                _nombre = nombre;
+            }
+
+            public string Apellido
+            {
+                get { return _apellido; }
+            }
+
+            public string Nombre
+            {
+                get { return _nombre; }
+            }
+
+            public static bool operator ==(Comerciante c1, Comerciante c2) ///igualdad (comerciante, comerciante) analiza si los comerciantes son iguales
+            {
+                return c1.Apellido == c2.Apellido && c1.Nombre == c2.Nombre;
+            }
+
+            public static bool operator !=(Comerciante c1, Comerciante c2) 
+            {
+                return !(c1 == c2);
+            }
+
+            public static implicit operator string (Comerciante comerciante)
+            {
+                StringBuilder stringBuilder = new StringBuilder();
+
+                stringBuilder.AppendLine($"Nombre: {comerciante._nombre}");
+                stringBuilder.AppendLine($"Apellido: {comerciante._apellido}");
+
+                return stringBuilder.ToString();
+            }
+        }
+    }
+}
