@@ -69,8 +69,9 @@ namespace Entidades
 
         public static bool operator !=(Shopping shopping, Comercio comercio)
         {
-            return !(shopping == comercio);
+            return !object.Equals(shopping, comercio); 
         }
+
 
         public static Shopping operator +(Shopping shopping, Comercio comercio)
         {
@@ -80,17 +81,18 @@ namespace Entidades
                 {
                     shopping._comercios.Add(comercio);
                 }
+                else if (!(shopping._comercios.Contains(comercio)))
+                {
+                    Console.WriteLine("No hay más lugar en el Shopping!!!");
+                }
+
+                else
+                {
+                    Console.WriteLine("El comercio ya está en el Shopping!!!");
+                }
             }
 
-            else if (!(shopping._comercios.Contains(comercio)))
-            {
-                Console.WriteLine("No hay más lugar en el Shopping!!!");
-            }
-
-            else
-            {
-                Console.WriteLine("El comercio ya está en el Shopping!!!");
-            }
+            
 
             return shopping;
         }
@@ -99,16 +101,20 @@ namespace Entidades
         {
             double precio = 0;
 
-            foreach (Comercio comercio in _comercios)
+            if (_comercios != null)
             {
-                if (comercio.GetType() == _comercios.GetType())
+                foreach (Comercio comercio in _comercios)
                 {
-                    precio += comercio.PrecioAlquiler;
+                    if (comercio.GetType() == _comercios.GetType())
+                    {
+                        precio += comercio.PrecioAlquiler;
+                    }
                 }
             }
 
             return precio;
         }
+
 
         public static string Mostrar(Shopping shopping)
         {
