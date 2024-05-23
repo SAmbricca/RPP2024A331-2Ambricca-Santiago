@@ -52,11 +52,18 @@ namespace Entidades
 
         public static implicit operator Shopping(int capacidadMaxima)  ///toma el valor int y retorna una nueva instancia de Shopping con la capacidadMaxima
         {
-            return new Shopping(capacidadMaxima); 
+            return new Shopping(capacidadMaxima);
         }
 
-        public static bool operator == (Shopping shopping, Comercio comercio)
+        public static bool operator ==(Shopping shopping, Comercio comercio)
         {
+            if (shopping != null && shopping._comercios != null)
+            {
+                if (shopping._comercios.Count() < shopping._capacidadMaxima)
+                {
+                    return shopping._comercios.Contains(comercio);
+                }
+            }
             return shopping._comercios.Contains(comercio);
         }
 
@@ -67,16 +74,20 @@ namespace Entidades
 
         public static Shopping operator +(Shopping shopping, Comercio comercio)
         {
-            if (shopping._comercios.Count() < shopping._capacidadMaxima)
+            if (shopping != null && shopping._comercios != null)
             {
-                shopping._comercios.Add(comercio);
+                if (shopping._comercios.Count() < shopping._capacidadMaxima)
+                {
+                    shopping._comercios.Add(comercio);
+                }
             }
+
             else if (!(shopping._comercios.Contains(comercio)))
             {
                 Console.WriteLine("No hay más lugar en el Shopping!!!");
             }
 
-            else 
+            else
             {
                 Console.WriteLine("El comercio ya está en el Shopping!!!");
             }
