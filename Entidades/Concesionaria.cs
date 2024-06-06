@@ -142,7 +142,7 @@ namespace Entidades
             }
             else
             {
-                Console.WriteLine("El vehiculo ya está en el Concesionaria!!!");
+                Console.WriteLine("El vehiculo no está en el Concesionaria!!!");
             }
 
             return concesionaria;
