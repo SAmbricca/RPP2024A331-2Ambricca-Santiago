@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -17,47 +17,47 @@ namespace Entidades
         private int _capacidad;
         private List<Vehiculo> _vehiculos;
 
-        public int Capacidad
+        public int Capacidad                            //propiedad que devuelve y establece la caacidad max de vehiculos que puede haber la concesionaria
         {
             get { return _capacidad; }
             set { _capacidad = value; }
         }
-        public List<Vehiculo> Vehiculos
+        public List<Vehiculo> Vehiculos                 //Propiedad que devuelve y establece la lista de vehiculos en la concesionaria
         {
             get { return _vehiculos; }
             set { _vehiculos = value; }
         }
 
-        public double PrecioDeAutos
+        public double PrecioDeAutos                     //propiedad que devuelve el precio total de los autos en la concesionaria
         {
             get { return ObtenerPrecio(EVehiculo.Auto); }
             set { }
         }
 
-        public double PrecioDeMotos
+        public double PrecioDeMotos                     //propiedad que devuelve el precio total de las motos en la concesionaria
         {
             get { return ObtenerPrecio(EVehiculo.Moto); }
             set { }
         }
 
-        public double PrecioTotal
+        public double PrecioTotal                       //propiedad que devuelve el precio total en la concesionaria
         {
             get { return ObtenerPrecio(EVehiculo.Ambos); }
             set { }
         }
 
-        private Concesionaria()
+        private Concesionaria()                         //constructor vacio que inicializa la lista de vehiculos
         {
             _vehiculos = new List<Vehiculo>();
         }
 
-        private Concesionaria(int capacidad)
+        private Concesionaria(int capacidad)            //constructor que inicializa la capacidad maxima de vehiculos y la lista de vehiculos
             : this()
         {
             _capacidad = capacidad;
         }
 
-        private double ObtenerPrecio(EVehiculo tipoVehiculo)
+        private double ObtenerPrecio(EVehiculo tipoVehiculo)    //Recibe un tipo de vehiculo y suma los precios de todos los vehiculos de dicho tipo
         {
             double total = 0;
 
@@ -76,7 +76,7 @@ namespace Entidades
             return total;
         }
 
-        public static string Mostrar(Concesionaria concesionaria)
+        public static string Mostrar(Concesionaria concesionaria)              //Metodo que devuelve una cadena con la informacion de la concesionaria y el listado de los vehiculos
         {
             var sb = new StringBuilder();
 
@@ -103,21 +103,21 @@ namespace Entidades
             return sb.ToString();
         }
 
-        public static implicit operator Concesionaria(int capacidad)
+        public static implicit operator Concesionaria(int capacidad)   //operador que convierte el valor de la capacidad int en uno de tipo Concesionaria, de manera implicita
         {
             return new Concesionaria(capacidad);
         }
 
-        public static bool operator ==(Concesionaria concesionaria, Vehiculo vehiculo)
+        public static bool operator ==(Concesionaria concesionaria, Vehiculo vehiculo) //operador que compara una concesionaria con un vehiculo y devuelve true si el vehiculo esta en la concesionaria
         {
             return concesionaria._vehiculos.Contains(vehiculo);
         }
-        public static bool operator !=(Concesionaria concesionaria, Vehiculo vehiculo)
+        public static bool operator !=(Concesionaria concesionaria, Vehiculo vehiculo) //devuelve true si el vehiculo no esta en la concesionaria
         {
             return !(concesionaria == vehiculo);
         }
 
-        public static Concesionaria operator +(Concesionaria concesionaria, Vehiculo vehiculo)
+        public static Concesionaria operator +(Concesionaria concesionaria, Vehiculo vehiculo)  //operador que agrega un vehiculo a la concesionaria si hay espacio disponible
         {
             if (concesionaria._vehiculos.Count() >= concesionaria._capacidad)
             {
@@ -134,7 +134,7 @@ namespace Entidades
 
             return concesionaria;
         }
-        public static Concesionaria operator -(Concesionaria concesionaria, Vehiculo vehiculo)
+        public static Concesionaria operator -(Concesionaria concesionaria, Vehiculo vehiculo)  //operador que elimina un vehiculo de la concesionaria si está presente
         {
             if (concesionaria == vehiculo) // reutiliza operador igualdad
             {
@@ -147,7 +147,7 @@ namespace Entidades
 
             return concesionaria;
         }
-        public void GuardarConcesionaria(string rutaArchivo)
+        public void GuardarConcesionaria(string rutaArchivo) //metodo que guarda la informacion de la concesionaria en un archivo de texto
         {
             if (!File.Exists(rutaArchivo))
             {
@@ -161,7 +161,7 @@ namespace Entidades
                 sw.WriteLine(Mostrar(this));
             }
         }
-        public void SerializarConcesionaria(string path)
+        public void SerializarConcesionaria(string path)    //Metodo que serializa la concesionaria en un archivo XML
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Concesionaria));
 
@@ -170,13 +170,13 @@ namespace Entidades
                 xmlSerializer.Serialize(streamWriter, this);
             }
         }
-        public static Concesionaria DeserializarConcesionaria(string path)
+        public static Concesionaria DeserializarConcesionaria(string path)    //metodo que deserializa una concesionaria desde un archivo XML
         {
             XmlSerializer xmlSerializer = new XmlSerializer(typeof(Concesionaria));
             ///en vez de escribir, ahora lo leo
             using (StreamReader streamReader = new StreamReader(path))
             {
-                return (Concesionaria)xmlSerializer.Deserialize(streamReader);
+                return (Concesionaria)xmlSerializer.Deserialize(streamReader);  
             }
         }
     }
