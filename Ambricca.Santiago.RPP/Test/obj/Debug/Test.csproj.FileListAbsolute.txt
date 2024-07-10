@@ -1,0 +1,10 @@
+E:\Programación II\Ambricca.Santiago.RPP\Test\bin\Debug\Test.exe.config
+E:\Programación II\Ambricca.Santiago.RPP\Test\bin\Debug\Test.exe
+E:\Programación II\Ambricca.Santiago.RPP\Test\bin\Debug\Test.pdb
+E:\Programación II\Ambricca.Santiago.RPP\Test\bin\Debug\Entidades.dll
+E:\Programación II\Ambricca.Santiago.RPP\Test\bin\Debug\Entidades.pdb
+E:\Programación II\Ambricca.Santiago.RPP\Test\obj\Debug\Test.csproj.AssemblyReference.cache
+E:\Programación II\Ambricca.Santiago.RPP\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\Programación II\Ambricca.Santiago.RPP\Test\obj\Debug\Test.csproj.Up2Date
+E:\Programación II\Ambricca.Santiago.RPP\Test\obj\Debug\Test.exe
+E:\Programación II\Ambricca.Santiago.RPP\Test\obj\Debug\Test.pdb
