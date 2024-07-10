@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\entidades\\concesionaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\concesionaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\entidades\\enumerados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\enumerados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|e:\\programaci\u00F3n ii\\ambricca.santiago.rpp\\entidades\\fabricante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\fabricante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\entidades\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\entidades\\moto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\moto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE9F3B25-B9F1-442B-9713-623EB1F113DC}|Test\\Test.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AE9F3B25-B9F1-442B-9713-623EB1F113DC}|Test\\Test.csproj|solutionrelative:test\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\entidades\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6583F986-D6C6-4B2B-A9B0-350ED44B0DE3}|Entidades\\Entidades.csproj|solutionrelative:entidades\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Test\\Program.cs",
+              "RelativeDocumentMoniker": "Test\\Program.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Test\\Program.cs",
+              "RelativeToolTip": "Test\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:22:58.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "Entidades\\Vehiculo.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Vehiculo.cs",
+              "RelativeToolTip": "Entidades\\Vehiculo.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwBsAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:22:44.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Moto.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Moto.cs",
+              "RelativeDocumentMoniker": "Entidades\\Moto.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Moto.cs",
+              "RelativeToolTip": "Entidades\\Moto.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAowDgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:22:20.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Enumerados.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Enumerados.cs",
+              "RelativeDocumentMoniker": "Entidades\\Enumerados.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Enumerados.cs",
+              "RelativeToolTip": "Entidades\\Enumerados.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:22:01.945Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Concesionaria.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Concesionaria.cs",
+              "RelativeDocumentMoniker": "Entidades\\Concesionaria.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Concesionaria.cs",
+              "RelativeToolTip": "Entidades\\Concesionaria.cs",
+              "ViewState": "AQIAAI4AAAAAAAAAAAAUwLcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:21:40.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Auto.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Auto.cs",
+              "RelativeDocumentMoniker": "Entidades\\Auto.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Auto.cs",
+              "RelativeToolTip": "Entidades\\Auto.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:21:19.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Fabricante.cs",
+              "DocumentMoniker": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Fabricante.cs",
+              "RelativeDocumentMoniker": "Entidades\\Fabricante.cs",
+              "ToolTip": "E:\\Programaci\u00F3n II\\Ambricca.Santiago.RPP\\Entidades\\Fabricante.cs",
+              "RelativeToolTip": "Entidades\\Fabricante.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T00:20:47.635Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

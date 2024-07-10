@@ -1,0 +1,6 @@
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\bin\Debug\Entidades.dll
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\bin\Debug\Entidades.pdb
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\obj\Debug\Entidades.dll
+E:\Programación II\Ambricca.Santiago.RPP\Entidades\obj\Debug\Entidades.pdb
