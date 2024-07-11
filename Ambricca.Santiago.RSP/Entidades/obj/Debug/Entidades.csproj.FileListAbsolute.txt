@@ -1,0 +1,12 @@
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\bin\Debug\Entidades.dll
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\bin\Debug\Entidades.pdb
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\obj\Debug\Entidades.dll
+C:\Users\zbarr\OneDrive\Escritorio\Barriento.Zahira.SP\Entidades\obj\Debug\Entidades.pdb
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\bin\Debug\Entidades.dll
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\bin\Debug\Entidades.pdb
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\obj\Debug\Entidades.dll
+E:\Programación II\Ambricca.Santiago.RSP\Entidades\obj\Debug\Entidades.pdb
