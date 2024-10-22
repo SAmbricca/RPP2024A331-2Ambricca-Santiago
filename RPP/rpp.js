@@ -224,19 +224,46 @@ function agregarFormularioAbm() {
     let apellido = document.getElementById('apellido ABM').value;
     let edad = document.getElementById('edad ABM').value;
 
+    if (!nombre || !apellido) {
+        alert("El nombre y apellido no pueden estar vacíos.");
+        return;
+    }
+    
+    if (isNaN(edad) || edad <= 15) {
+        alert("La edad debe ser mayor a 15.");
+        return;
+    }
     //Determino el tipo de Persona
     let persona;
     let tipo = document.getElementById('tipo ABM').value;
     
     if (tipo == "0") {
+       
         let equipo = document.getElementById('equipo ABM').value;
         let posicion = document.getElementById('posicion ABM').value;
         let cantGoles = document.getElementById('cantGoles ABM').value;
+
+        if (isNaN(cantGoles) || cantGoles < 0) {
+            alert("La cantidad de goles debe ser un entero mayor a -1.");
+            return;
+        }
+
         persona = new Futbolista(id, nombre, apellido, edad, equipo, posicion, cantGoles); 
+
+        
     } else {
         let titulo = document.getElementById('titulo ABM').value;
         let facultad = document.getElementById('facultad ABM').value;
         let anoGrad = document.getElementById('anoGrad ABM').value;
+        if (isNaN(anoGrad) || anoGrad <= 1950) {
+            alert("El año de graduación debe ser un entero mayor a 1950.");
+            return;
+        }
+
+        if (!titulo || !facultad) {
+            alert("El título y la facultad no pueden estar vacíos.");
+            return;
+        }
         persona = new Profesional(id, nombre, apellido, edad, titulo, facultad, anoGrad); 
     }
 
