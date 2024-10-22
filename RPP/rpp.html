@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="rpp.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formularioDatos">
+            <h1 id="tituloFormulario">Form Datos</h1>
+            <div id="controlesFormularioDatos">
+                <label for="filtro">Filtrar Por:</label>
+                <select id="filtro" onchange="filtrarPersonas()">
+                    <option value="Todos">Todos</option>
+                    <option value="Futbolistas">Futbolistas</option>
+                    <option value="Profesionales">Profesionales</option>
+                </select>
+                <br><br>
+                <label><input type="checkbox" checked data-columna="id" onchange="checkItemTabla()"> ID</label>
+                <label><input type="checkbox" checked data-columna="nombre" onchange="checkItemTabla()"> Nombre</label>
+                <label><input type="checkbox" checked data-columna="apellido" onchange="checkItemTabla()"> Apellido</label>
+                <label><input type="checkbox" checked data-columna="edad" onchange="checkItemTabla()"> Edad</label>
+                <label><input type="checkbox" checked data-columna="equipo" onchange="checkItemTabla()"> Equipo</label>
+                <label><input type="checkbox" checked data-columna="posicion" onchange="checkItemTabla()"> Posición</label>
+                <label><input type="checkbox" checked data-columna="cantGoles" onchange="checkItemTabla()"> CantGoles</label>
+                <label><input type="checkbox" checked data-columna="titulo" onchange="checkItemTabla()"> Título</label>
+                <label><input type="checkbox" checked data-columna="facultad" onchange="checkItemTabla()"> Facultad</label>
+                <label><input type="checkbox" checked data-columna="anoGrad" onchange="checkItemTabla()"> AñoGrad</label>
+                <br><br><br>
+                
+                <label for="promedio">Calcular Edad Promedio:</label>
+                <input type="text" id="promedio">
+                <button type="button" onclick="calcularPromedioEdad()">Calcular</button><br><br>
+            </div>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th class="id" onclick="ordenarTabla('id')">ID</th>
+                        <th class="nombre" onclick="ordenarTabla('nombre')">Nombre</th>
+                        <th class="apellido" onclick="ordenarTabla('apellido')">Apellido</th>
+                        <th class="edad" onclick="ordenarTabla('edad')">Edad</th>
+                        <th class="equipo" onclick="ordenarTabla('equipo')">Equipo</th>
+                        <th class="posicion" onclick="ordenarTabla('posicion')">Posición</th>
+                        <th class="cantGoles" onclick="ordenarTabla('cantGoles')">CantGoles</th>
+                        <th class="titulo" onclick="ordenarTabla('titulo')">Título</th>
+                        <th class="facultad" onclick="ordenarTabla('facultad')">Facultad</th>
+                        <th class="anoGrad" onclick="ordenarTabla('anoGrad')">AñoGrad</th>
+                    </tr>
+                </thead>
+                <tbody id="datosTabla">
+                </tbody>
+            </table>
+            <br>
+            <button type="button" id="botonAgregarFormularioDatos" onclick="FormularioDatosAAbm()">Agregar formulario</button>
+            </div>
+        </form>
+        <form id="formularioABM">
+            <label for="id">ID:</label>
+            <input type="text" id="id ABM"><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre ABM"><br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido ABM"><br>
+            <label for="edad">Edad:</label>
+            <input type="text" id="edad ABM"><br>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo ABM" onchange="filtrarPersonasAbm()">
+                <option value="0">Futbolista</option>
+                <option value="1">Profesionales</option>
+            </select><br>
+            <div id="datosFutbolistas">
+            <label for="equipo">Equipo:</label>
+            <input type="text" id="equipo ABM"><br>
+            <label for="posicion">Posicion:</label>
+            <input type="text" id="posicion ABM"><br>
+            <label for="cantGoles">CantGoles:</label>
+            <input type="text" id="cantGoles ABM"><br>
+            </div>
+            <div id="datosProfesionales">
+            <label for="titulo">Titulo:</label>
+            <input type="text" id="titulo ABM"><br>
+            <label for="facultad">Facultad:</label>
+            <input type="text" id="facultad ABM"><br>
+            <label for="anoGrad">AñoGrad:</label>
+            <input type="text" id="anoGrad ABM"><br>
+            </div>
+            <button type="button" id="botonAgregarFormularioABM" onclick="agregarFormularioAbm()">Agregar</button>
+            <button type="button" id="botonModificarFormularioABM" onclick="modificarFormularioAbm()">Modificar</button>
+            <button type="button" id="botonEliminarFormularioABM" onclick="eliminarFormularioAbm()">Eliminar</button>
+            <button type="button" id="botonCancelarFormularioABM" onclick="cancelarFormularioAbm()">Cancelar</button>      
+        </form>
+    </div>
+    <script src="rpp.js">
+    </script>
+</body>
+</html>
+
+<!--                
+       
+-->
