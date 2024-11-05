@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos</title>
+    <link rel="stylesheet" href="sp.css">
+</head>
+<body>
+    <div class="container">
+        <form id="formularioDatos">
+            <h1 id="tituloFormulario">Formulario Lista</h1>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th class="id">ID</th>
+                        <th class="modelo">Modelo</th>
+                        <th class="anoFabricacion">Año Fab</th>
+                        <th class="velMax">Vel Max</th>
+                        <th class="cantidadPuertas">Cant Pue</th>
+                        <th class="asientos">Asientos</th>
+                        <th class="carga">Carga</th>
+                        <th class="autonomia">Autonomia</th>
+                        <th class="modificar">Modificar</th>
+                        <th class="eliminar">Elminiar</th>
+                    </tr>
+                </thead>
+                <tbody id="datosTabla">
+                </tbody>
+            </table>
+            <br>
+            <button type="button" id="botonAgregarFormularioDatos" onclick="FormularioDatosAAbm()">Agregar Elemento</button>
+            </div>
+        </form>
+        <form id="formularioABM">
+            <label for="id">ID:</label>
+            <input type="text" id="id ABM"><br>
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo ABM"><br>
+            <label for="anoFabricacion">Año Fabricacion:</label>
+            <input type="text" id="anoFabricacion ABM"><br>
+            <label for="velMax">Velocidad Maxima:</label>
+            <input type="text" id="velMax ABM"><br>
+            <label for="tipo">Tipo:</label>
+            <select id="tipo ABM">
+                <option value="0">Autos</option>
+                <option value="1">Camiones</option>
+            </select><br>
+            <div id="datosAutos">
+            <label for="cantidadPuertas">Cantidad de puertas:</label>
+            <input type="text" id="cantidadPuertas ABM"><br>
+            <label for="asientos">Asientos:</label>
+            <input type="text" id="asientos ABM"><br>
+            </div>
+            <div id="datosCamiones">
+            <label for="carga">Carga:</label>
+            <input type="text" id="carga ABM"><br>
+            <label for="autonomia">Autonomia:</label>
+            <input type="text" id="autonomia ABM"><br>
+            </div>
+            <button type="button" id="botonAceptarFormularioABM" onclick="aceptarFormularioAbm()">Aceptar</button>
+            <button type="button" id="botonCancelarFormularioABM" onclick="cancelarFormularioAbm()">Cancelar</button>   
+        </form>
+    </div>
+    <script src="sp.js">
+    </script>
+</body>
+</html>
+
+<!--                
+       
+-->
