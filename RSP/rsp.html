@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="rsp.css">
+</head>
+<body>
+    <section id="formularioLista">
+        <div id="tituloLista">
+            <label id="lbllista">Formulario Lista</label>
+        </div>
+        <div>
+            <table id="tabla">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>fechaNac</th>
+                        <th>dni</th>
+                        <th>Pais Origen</th>
+                        <th>Modificar</th>
+                        <th>Elminiar</th>
+                    </tr>
+                </thead>
+                <tbody id="datosTabla">
+                </tbody>
+            </table>
+        </div>
+        <button type="button" id="botonAgregarFormularioDatos" onclick="cambiarFormulario('agregar')">Agregar Elemento</button>
+    </section>
+    <section id="formularioABM">
+        <div id="tituloAbm">
+            <label id="labelTituloAbm">Formulario ABM</label>
+        </div>
+        <div>
+            <label class="lblFormAbm">ID</label>
+            <input type="text" class ="txtAbm" id="txtId" disabled>
+        </div>
+        <div>
+            <label class="lblFormAbm">Nombre</label>
+            <input type="text" class ="txtAbm" id="txtNombre">
+        </div>
+        <div>
+            <label class="lblFormAbm">Apellido</label>
+            <input type="text" class ="txtAbm" id="txtApellido">
+        </div>
+        <div>
+            <label class="lblFormAbm">Fecha de Nacimiento</label>
+            <input type="text" class ="txtAbm" id="txtFechaNacimiento">
+        </div>
+        <div>
+            <label class="lblFormAbm">Tipo:</label>
+            <select class="select-box" id="slTipo">
+                <option value="Ciudadano">Ciudadano</option>
+                <option value="Extranjero">Extranjero</option>
+            </select>
+        </div>
+        <div>
+            <label class="lblFormAbm">Dni</label>
+            <input type="text" class ="txtAbm" id="txtDni">
+        </div>
+        <div>
+            <label class="lblFormAbm">Pais de origen</label>
+            <input type="text" class ="txtAbm" id="txtPaisOrigen">
+        </div>
+        <div>
+        <button type="button" id="botonAceptarFormularioABM">Aceptar</button>
+        <button type="button" id="botonCancelarFormularioABM" onclick="cambiarFormulario('cancelar')">Cancelar</button>   
+        </div>
+    </section>
+    <section id="spinner">
+        <div class="loader"></div>
+    </section>
+    <script src="rsp.js">
+    </script>
+</body>
+</html>
